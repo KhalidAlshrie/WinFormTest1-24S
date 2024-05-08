@@ -1,3 +1,5 @@
+using static System.Net.Mime.MediaTypeNames;
+
 namespace WinFormTest1
 {
     public partial class Form1 : Form
@@ -13,6 +15,30 @@ namespace WinFormTest1
             textBoxes[3] = textBox4;
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string a, b, c, d;
+            a = textBox1. Text;
+            b = textBox2.Text;
+            c = textBox4. Text;
+            d = textBox3. Text;
+            textBox1.Text = d;
+            textBox2.Text = a;
+            textBox4.Text = b;
+            textBox3.Text = c;        
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string a, b, c, d;
+            a = textBox1. Text;
+            b = textBox2.Text;
+            c = textBox4. Text;
+            d = textBox3. Text;
+            textBox1.Text = b;
+            textBox2.Text = c;
+            textBox4.Text = d;
+            textBox3. Text = a;
+        }
     }
 }
